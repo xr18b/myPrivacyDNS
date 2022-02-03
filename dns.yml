@@ -6,6 +6,12 @@
 #               ipv4: [1.2.3.4, 5.6.7.8]
 #               ipv6: [addr::1, addr::2]
 #  -> 'blocking' -- Contains the destination of the blocking and a list of domains to block
+#                   You may specify wether it should include all subdomains or not with the 'include_sub' value (default to True)
+#          Format:
+#             - name: host.to.block
+#               include_sub: False
+#             - name: domain.to.block
+#               include_sub: True (not required as default to True)
 
 # static_mapping:
 #     - host: youtube.com
