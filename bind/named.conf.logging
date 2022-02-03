@@ -1,0 +1,20 @@
+logging {
+#    channel query-logs {
+#        file "/var/log/named/query.log" versions 2 size 2m;
+#        severity debug 10;
+#        print-category yes;
+#        print-severity yes;
+#        print-time yes;
+#    };
+
+    channel error-logs {
+        file "/var/log/named/error.log" versions 5 size 2m;
+        severity error;
+        print-category yes;
+        print-severity yes;
+        print-time yes;
+    };
+
+    category default { error-logs; };
+    category config { error-logs; };
+};
