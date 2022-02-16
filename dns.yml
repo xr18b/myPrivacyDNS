@@ -267,6 +267,10 @@ blocking:
         - name: 0x1f4b0.com
         - name: gaug.es
         - name: pixel.wp.com
+## Blocking some whidely used CDNs
+## May break the internet
+        - name: cdn.trustcommander.net
+        - name: cloudfront.net
 ## Blocking all google domains
 ## Will break most websites, so to be removed if required
         - name: google.com
