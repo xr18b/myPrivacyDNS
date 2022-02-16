@@ -265,6 +265,8 @@ blocking:
         - name: servyourads.com
         - name: stattrack.xyz
         - name: 0x1f4b0.com
+        - name: gaug.es
+        - name: pixel.wp.com
 ## Blocking all google domains
 ## Will break most websites, so to be removed if required
         - name: google.com
