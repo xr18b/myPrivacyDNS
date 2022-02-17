@@ -266,6 +266,9 @@ blocking:
         - name: 0x1f4b0.com
         - name: gaug.es
         - name: pixel.wp.com
+        - name: servedby-buysellads.com
+        - name: mc.yandex.ru
+        - name: realbig.online
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
