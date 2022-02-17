@@ -188,7 +188,6 @@ blocking:
         - name: singular.net
         - name: ampproject.org
         - name: flurry.com
-        - name: omtrdc.net
         - name: litix.io
         - name: alexametrics.com
         - name: stakingsmile.com
@@ -275,6 +274,7 @@ blocking:
         - name: dnsdelegation.io
         - name: storetail.io
         - name: at-o.net
+        - name: omtrdc.net
         - name: keyade.com
         - name: bp01.net
         - name: webtrekk.com
