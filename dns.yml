@@ -267,6 +267,19 @@ blocking:
         - name: 0x1f4b0.com
         - name: gaug.es
         - name: pixel.wp.com
+## Blocking domains used for 1st party tracking
+## (making alias from visited website's sub domains to trackers' domains)
+        - name: eulerian.net
+        - name: eulerian.fr
+        - name: eulerian.com
+        - name: dnsdelegation.io
+        - name: storetail.io
+        - name: at-o.net
+        - name: keyade.com
+        - name: bp01.net
+        - name: webtrekk.com
+        - name: webtrekk.net
+        - name: fastly.net
 ## Blocking some whidely used CDNs
 ## May break the internet
         - name: cdn.trustcommander.net
