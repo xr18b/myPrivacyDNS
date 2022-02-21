@@ -280,6 +280,8 @@ blocking:
         - name: gscontxt.net
         - name: optimizely.com
         - name: creative-serving.com
+        - name: igodigital.com
+        - name: newrelic.com
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
