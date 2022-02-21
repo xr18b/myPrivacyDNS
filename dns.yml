@@ -18,6 +18,14 @@
 #       ipv4: [142.250.74.14]
 #       ipv6: [2a00:1450:400f:800::200e]
 
+static_mapping:
+    # Adding some static mappings for hifi.lu as they use CloudFront CDN for their whole website
+    - host: www.hifi.lu
+      ipv4: [65.9.49.73, 65.9.49.84, 65.9.49.126, 65.9.49.60]
+      ipv6: [2600:9000:20fc:cc00:3:a98c:9d00:93a1, 2600:9000:20fc:d400:3:a98c:9d00:93a1, 2600:9000:20fc:ba00:3:a98c:9d00:93a1, 2600:9000:20fc:8800:3:a98c:9d00:93a1]
+    - host: api.hifi.lu
+      ipv4: [65.9.49.94, 65.9.49.78, 65.9.49.2, 65.9.49.24]
+
 blocking:
     # 'destination' defines where to redirect blocked domains
     # It must include a name and an ipv4
