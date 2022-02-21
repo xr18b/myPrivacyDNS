@@ -27,8 +27,11 @@ def get_static_mapping(config):
     RETURN_TEXT = "\n;\n; Static mappings\n;"
 
     for mapping in config:
-        for address in mapping['ipv4']:
-            RETURN_TEXT += "\n" + mapping['host'].ljust(50) + " IN A     " + address
+        if "ipv4" in mapping:
+            for address in mapping['ipv4']:
+                RETURN_TEXT += "\n" + mapping['host'].ljust(50) + " IN A     " + address
+        else:
+            sys.exit("No ipv4 specified for static mapping '%s'\nAborting..." % mapping['host'])
 
         if "ipv6" in mapping:
             for address in mapping['ipv6']:
