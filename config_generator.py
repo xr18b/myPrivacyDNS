@@ -30,8 +30,9 @@ def get_static_mapping(config):
         for address in mapping['ipv4']:
             RETURN_TEXT += "\n" + mapping['host'].ljust(50) + " IN A     " + address
 
-        for address in mapping['ipv6']:
-            RETURN_TEXT += "\n" + mapping['host'].ljust(50) + " IN AAAA  " + address
+        if "ipv6" in mapping:
+            for address in mapping['ipv6']:
+                RETURN_TEXT += "\n" + mapping['host'].ljust(50) + " IN AAAA  " + address
 
     return RETURN_TEXT
 
