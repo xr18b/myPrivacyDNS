@@ -285,6 +285,7 @@ blocking:
         - name: sentry.io
         - name: conviva.com
         - name: flashtalking.com
+        - name: braze.com
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
