@@ -307,7 +307,7 @@ blocking:
 ## Blocking some whidely used CDNs
 ## May break the internet
         - name: cdn.trustcommander.net
-        - name: cloudfront.net
+###     - name: cloudfront.net
 ## Blocking all google domains
 ## Will break most websites, so to be removed if required
         - name: google.com
