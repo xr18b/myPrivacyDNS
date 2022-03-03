@@ -290,6 +290,30 @@ blocking:
         - name: conviva.com
         - name: flashtalking.com
         - name: braze.com
+        - name: an.yandex.ru
+        - name: mc.yandex.ru
+        - name: adfox.yandex.ru
+        - name: yadro.ru
+        - name: tns-counter.ru
+        - name: go-mpulse.net
+        - name: petametrics.com
+        - name: grapeshot.co.uk
+        - name: dotmetrics.net
+        - name: the-ozone-project.com
+        - name: 360yield.com
+        - name: ads.avct.cloud
+        - name: districtm.io
+        - name: districtm.ca
+        - name: adsbookie.com
+        - name: cqq5id8n.com
+        - name: luckyorange.net
+        - name: mylikes.com
+        - name: trafficg.com
+        - name: popcash.net
+        - name: adblade.com
+        - name: incapdns.net
+        - name: adgear.com
+        - name: addtoany.com
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
