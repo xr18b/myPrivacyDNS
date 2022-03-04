@@ -314,6 +314,10 @@ blocking:
         - name: incapdns.net
         - name: adgear.com
         - name: addtoany.com
+        - name: choupsee.com
+        - name: itskiddoan.club
+        - name: connectad.io
+        - name: s-onetag.com
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
