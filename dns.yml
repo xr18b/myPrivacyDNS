@@ -322,6 +322,24 @@ blocking:
         - name: itskiddoan.club
         - name: connectad.io
         - name: s-onetag.com
+        - name: clerrrep.com
+        - name: ilyf4amifh.com
+        - name: pubmaner5.com
+        - name: opvanillishan.com
+        - name: exdynsrv.com
+        - name: adthrive.com
+        - name: onthe.io
+        - name: ipinfo.io
+        - name: privacy-center.org
+        - name: mybbc-analytics.files.bbci.co.uk
+        - name: sascdn.com
+        - name: appconsent.io
+        - name: improving.duckduckgo.com
+        - name: unifygroup.com
+        - name: algolianet.com
+        - name: trafficjunky.com
+        - name: etahub.com
+        - name: surveygizmo.eu
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
