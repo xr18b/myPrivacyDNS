@@ -340,6 +340,18 @@ blocking:
         - name: trafficjunky.com
         - name: etahub.com
         - name: surveygizmo.eu
+        - name: browser.pipe.aria.microsoft.com
+          include_sub: False
+        - name: unrulymedia.com
+        - name: contentsquare.net
+        - name: techlab-cdn.com
+        - name: onetrust.com
+        - name: edgekey.net
+        - name: byteoversea.com
+        - name: top.lv
+        - name: puls.lv
+        - name: europuls.eu
+        - name: paypalobjects.com
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
