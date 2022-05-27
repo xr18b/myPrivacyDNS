@@ -371,7 +371,6 @@ blocking:
 ## Blocking some whidely used CDNs
 ## May break the internet
         - name: cdn.trustcommander.net
-###     - name: cloudfront.net
 ## Blocking CryptoMiners
         - name: jscoinminer.com
 ## Blocking all google domains
