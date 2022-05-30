@@ -356,6 +356,10 @@ blocking:
         - name: puls.lv
         - name: europuls.eu
         - name: paypalobjects.com
+        - name: browser.pipe.aria.microsoft.com
+          include_sub: False
+        - name: browser.events.data.microsoft.com
+          include_sub: False
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
