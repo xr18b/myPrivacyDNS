@@ -356,6 +356,8 @@ blocking:
         - name: puls.lv
         - name: europuls.eu
         - name: paypalobjects.com
+        - name: collector.github.com
+          include_sub: False
         - name: browser.pipe.aria.microsoft.com
           include_sub: False
         - name: browser.events.data.microsoft.com
