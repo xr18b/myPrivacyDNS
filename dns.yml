@@ -349,8 +349,6 @@ blocking:
         - name: trafficjunky.com
         - name: etahub.com
         - name: surveygizmo.eu
-        - name: browser.pipe.aria.microsoft.com
-          include_sub: False
         - name: unrulymedia.com
         - name: contentsquare.net
         - name: techlab-cdn.com
