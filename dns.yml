@@ -361,6 +361,11 @@ blocking:
           include_sub: False
         - name: browser.events.data.microsoft.com
           include_sub: False
+        - name: nsatc.net
+        - name: allyes.com
+        - name: suprnova.cc
+        - name: unblockia.com
+        - name: media.net
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
