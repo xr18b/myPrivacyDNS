@@ -372,6 +372,8 @@ blocking:
         - name: unblockia.com
         - name: media.net
         - name: adx1.com
+        ### Blocking stuff used by the iPhone
+        - name: stats.gc.apple.com
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
