@@ -208,6 +208,7 @@ blocking:
         - name: jwplayer.com
         - name: trafficfactory.biz
         - name: adjust.com
+        - name: adjust.net.in
         - name: fbsbx.com
         - name: singular.net
         - name: ampproject.org
@@ -370,6 +371,7 @@ blocking:
         - name: suprnova.cc
         - name: unblockia.com
         - name: media.net
+        - name: adx1.com
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
