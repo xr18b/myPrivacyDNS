@@ -87,6 +87,7 @@ blocking:
         - name: ads-twitter.com
         - name: 2mdn.net
         - name: adform.net
+        - name: adform.com
         - name: adskeeper.com
         - name: cc-dt.com
         - name: crwdcntrl.net
@@ -209,6 +210,7 @@ blocking:
         - name: trafficfactory.biz
         - name: adjust.com
         - name: adjust.net.in
+        - name: adj.st
         - name: fbsbx.com
         - name: singular.net
         - name: ampproject.org
@@ -370,6 +372,24 @@ blocking:
         - name: unblockia.com
         - name: media.net
         - name: adx1.com
+        - name: 206ads.com
+        - name: 247-inc.net
+        - name: 247realmedia.com
+        - name: 360in.com
+        - name: 3gl.net
+        - name: ad-brix.com
+        - name: ad-delivery.net
+        - name: ad-locus.com
+        - name: ad-maven.com
+        - name: ad-score.com
+        - name: ad-srv.co
+        - name: ad-stir.com
+        - name: ad-x.co.uk
+        - name: ad.gt
+        - name: ad.org.vn
+        - name: adfox.net
+        - name: adfox.ru
+        - name: adrta.com
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
 ## Blocking domains used for 1st party tracking
