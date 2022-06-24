@@ -3,7 +3,7 @@
 import sys
 import yaml
 import argparse
-from os.path import exists 
+from os.path import exists
 
 def get_config(filename):
     try:
@@ -26,7 +26,15 @@ def get_static_mapping(config):
     # Generate the static mapping list
     RETURN_TEXT = "\n;\n; Static mappings\n;"
 
+    processedRecords = []
+
     for mapping in config:
+
+        if mapping['host'] in processedRecords:
+            continue
+
+        processedRecords.append(mapping['host'])
+
         if "ipv4" in mapping:
             for address in mapping['ipv4']:
                 RETURN_TEXT += "\n" + mapping['host'].ljust(50) + " IN A     " + address
@@ -58,7 +66,14 @@ def get_blocking_records(config):
         # Generating the blocking list
         RETURN_TEXT += "\n;\n; Blocking list\n;"
 
+        processedRecords = []
+
         for domain in config['domain_list']:
+            if domain['name'] in processedRecords:
+                continue
+
+            processedRecords.append(domain['name'])
+
             RETURN_TEXT += "\n" + domain['name'].ljust(50) + " IN CNAME " + BLK_DST_NAME
             if not ("include_sub" in domain) or domain['include_sub'] == True:
                 RETURN_TEXT += "\n" + "*." + domain['name'].ljust(48) + " IN CNAME " + BLK_DST_NAME
