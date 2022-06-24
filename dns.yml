@@ -126,7 +126,6 @@ blocking:
         - name: baselinestudy.com
         - name: baselinestudy.org
         - name: google
-        - name: chrome.com
         - name: fflick.com
         - name: g-tun.com
         - name: g.co
@@ -194,7 +193,6 @@ blocking:
         - name: tvpixel.com
         - name: cloud-miner.de
         - name: cloud-miner.eu
-        - name: jscoinminer.com
         - name: minerad.com
         - name: zaloapp.com
         - name: adware.com
@@ -263,7 +261,6 @@ blocking:
         - name: imhd.io
         - name: npttech.com
         - name: rebel.ai
-        - name: cxense.com
         - name: trackonomics.net
         - name: piano.io
         - name: trx-hub.com
@@ -306,7 +303,6 @@ blocking:
         - name: flashtalking.com
         - name: braze.com
         - name: an.yandex.ru
-        - name: mc.yandex.ru
         - name: adfox.yandex.ru
         - name: yadro.ru
         - name: tns-counter.ru
@@ -368,7 +364,6 @@ blocking:
           include_sub: False
         - name: nsatc.net
         - name: allyes.com
-        - name: suprnova.cc
         - name: unblockia.com
         - name: media.net
         - name: adx1.com
