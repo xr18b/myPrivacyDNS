@@ -339,6 +339,7 @@ blocking:
         - name: ipinfo.io
         - name: privacy-center.org
         - name: mybbc-analytics.files.bbci.co.uk
+        - name: polling.bbc.co.uk
         - name: sascdn.com
         - name: appconsent.io
         - name: improving.duckduckgo.com
@@ -399,6 +400,29 @@ blocking:
         - name: chartboost.com
         - name: d41.co
         - name: adserver.pandora.com
+        - name: adpartner.pro
+        - name: admission.net
+        - name: getclicky.com
+        - name: adswizz.com
+        - name: rtmark.net
+        - name: britepool.com
+        - name: acsbap.com
+        - name: adrecover.com
+        - name: adpushup.com
+        - name: pushowl.com
+        - name: adriver.ru
+        - name: ebet.com
+        - name: 2leep.com
+        - name: adsnative.com
+        - name: cdn.nmcdn.us
+        - name: content-ad.net
+        - name: content.ad
+        - name: mgid.com
+        - name: newsmaxfeednetwork.com
+        - name: outbrain.com
+        - name: revcontent.com
+        - name: zergnet.com
+        - name: taboola.com
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
 ## Blocking domains used for 1st party tracking
