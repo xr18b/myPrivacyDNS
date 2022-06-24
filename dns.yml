@@ -390,6 +390,20 @@ blocking:
         - name: adfox.net
         - name: adfox.ru
         - name: adrta.com
+        - name: ads.linkedin.com
+        - name: bttrack.com
+        - name: ml314.com
+        - name: reson8.com
+        - name: analytics.yahoo.com
+        - name: yieldlift.com
+        - name: acsbapp.com
+        - name: cootlogix.com
+        - name: quantumdex.io
+        - name: doceree.com
+        - name: dianomi.com
+        - name: chartboost.com
+        - name: d41.co
+        - name: adserver.pandora.com
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
 ## Blocking domains used for 1st party tracking
