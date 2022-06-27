@@ -441,6 +441,7 @@ blocking:
         - name: ssl.fastly.net
         - name: 2o7.net
         - name: pltraffic39.com
+        - name: wizaly.com
 ## Blocking some whidely used CDNs
 ## May break the internet
         - name: cdn.trustcommander.net
