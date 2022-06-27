@@ -241,6 +241,7 @@ blocking:
         - name: cloudflareinsights.com
         - name: getflowbox.com
         - name: adobedtm.com
+        - name: adobedc.net
         - name: dmcdn.net
         - name: adtlgc.com
         - name: polyfill.io
@@ -368,6 +369,13 @@ blocking:
         - name: unblockia.com
         - name: media.net
         - name: adx1.com
+        - name: adxglobal.com
+        - name: adxmi.com
+        - name: adxoo.com
+        - name: adxpansion.com
+        - name: adxpartner.com
+        - name: adxpremium.com
+        - name: adx-t.com
         - name: 206ads.com
         - name: 247-inc.net
         - name: 247realmedia.com
@@ -423,6 +431,22 @@ blocking:
         - name: revcontent.com
         - name: zergnet.com
         - name: taboola.com
+        - name: advertisements.immowebapi.be
+        - name: eloqua.com
+        - name: adwmg.com
+        - name: cav.ai
+        - name: epica.ai
+        - name: hybrid.ai
+        - name: jst.ai
+        - name: locationsciences.ai
+        - name: native.ai
+        - name: nws.ai
+        - name: peruse.ai
+        - name: powerad.ai
+        - name: infusionsoft.app
+        - name: ad4m.at
+        - name: ad4mat.ch
+        - name: marktplaats.net
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
 ## Blocking domains used for 1st party tracking
