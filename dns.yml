@@ -41,6 +41,9 @@ static_mapping:
       ipv4: [107.154.80.222]
     - host: www.orange.be
       ipv4: [107.154.80.222]
+    # Static mapping for gigya domain required for some app
+    - host: accounts.us1.gigya.com
+      ipv4: [23.37.32.195]
 
 blocking:
     # 'destination' defines where to redirect blocked domains
