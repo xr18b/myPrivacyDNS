@@ -148,6 +148,12 @@ blocking:
         - name: adnxs.com
         - name: adnxs-simple.com
         - name: adnxs.net
+        - name: adnxs.biz
+        - name: adnxs.info
+        - name: adnxs.mobi
+        - name: adnxs.org
+        - name: adnxs.us
+        - name: adnxs.nyc
         - name: segment.io
         - name: casalemedia.com
         - name: gemius.pl
@@ -451,6 +457,18 @@ blocking:
         - name: ad4m.at
         - name: ad4mat.ch
         - name: marktplaats.net
+        - name: 1010data.com
+        - name: 1000mercis.com
+        - name: 123-tracker.com
+        - name: 123count.com
+        - name: adnow.com
+        - name: bravenet.com
+        - name: authbill.com
+        - name: toktik.website
+        - name: witok.xyz
+        - name: toksell.xyz
+        - name: adups.com
+        - name: adsvert.com
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
 ## Blocking domains used for 1st party tracking
