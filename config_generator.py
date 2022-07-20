@@ -66,7 +66,7 @@ def get_blocking_records(config):
         for address in config['destination']['ipv6']:
             RETURN_TEXT += "\n" + BLK_DST_NAME.ljust(50) + " IN AAAA  " + address
 
-    if 'domain_list' in config and config['domain_list'] != None:
+    if 'domain_list' in config and config['domain_list'] is not None:
         # Generating the blocking list
         RETURN_TEXT += "\n;\n; Blocking list\n;"
 
@@ -79,7 +79,7 @@ def get_blocking_records(config):
             processedRecords.append(domain['name'])
 
             RETURN_TEXT += "\n" + domain['name'].ljust(50) + " IN CNAME " + BLK_DST_NAME
-            if not ("include_sub" in domain) or domain['include_sub'] == True:
+            if not ("include_sub" in domain) or domain['include_sub'] is True:
                 RETURN_TEXT += "\n" + "*." + domain['name'].ljust(48) + " IN CNAME " + BLK_DST_NAME
 
     return RETURN_TEXT
@@ -119,10 +119,10 @@ def main() -> None:
 
     OUTPUT_TEXT += get_template(args.template)
 
-    if 'static_mapping' in config and config['static_mapping'] != None:
+    if 'static_mapping' in config and config['static_mapping'] is not None:
         OUTPUT_TEXT += get_static_mapping(config['static_mapping'])
 
-    if 'blocking' in config and config['blocking'] != None:
+    if 'blocking' in config and config['blocking'] is not None:
         OUTPUT_TEXT += get_blocking_records(config['blocking'])
 
     if args.outfile is None:
