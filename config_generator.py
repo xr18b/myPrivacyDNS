@@ -5,6 +5,7 @@ import yaml
 import argparse
 from os.path import exists
 
+
 def get_config(filename):
     try:
         config_file = open(filename, 'r')
@@ -15,12 +16,14 @@ def get_config(filename):
     except (IOError, ValueError, EOFError) as error:
         sys.exit(error)
 
+
 def get_template(filename):
     try:
         template = open(filename, 'r')
         return template.read()
     except (IOError, ValueError, EOFError) as error:
         sys.exit(error)
+
 
 def get_static_mapping(config):
     # Generate the static mapping list
@@ -46,6 +49,7 @@ def get_static_mapping(config):
                 RETURN_TEXT += "\n" + mapping['host'].ljust(50) + " IN AAAA  " + address
 
     return RETURN_TEXT
+
 
 def get_blocking_records(config):
     # Generating the static records for the blocking destination
@@ -79,6 +83,7 @@ def get_blocking_records(config):
                 RETURN_TEXT += "\n" + "*." + domain['name'].ljust(48) + " IN CNAME " + BLK_DST_NAME
 
     return RETURN_TEXT
+
 
 def main() -> None:
     parser = argparse.ArgumentParser(usage="%(prog)s [options]")
@@ -139,6 +144,7 @@ def main() -> None:
                 print(args.outfile + ': Unknown Error - ', x)
 
     return 0
+
 
 if __name__ == "__main__":
     main()
