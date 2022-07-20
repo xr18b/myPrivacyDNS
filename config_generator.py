@@ -137,11 +137,11 @@ def main() -> None:
             with open(args.outfile, "w") as f:
                 f.writelines(OUTPUT_TEXT)
         except PermissionError:
-                print(args.outfile + ': Permission denied')
+            print(args.outfile + ': Permission denied')
         except IsADirectoryError:
-                print(args.outfile + ': Is a directory')
+            print(args.outfile + ': Is a directory')
         except IOError as x:
-                print(args.outfile + ': Unknown Error - ', x)
+            print(args.outfile + ': Unknown Error - ', x)
 
     return 0
 
