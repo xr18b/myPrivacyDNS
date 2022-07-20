@@ -87,8 +87,8 @@ def get_blocking_records(config):
 
 def main() -> None:
     parser = argparse.ArgumentParser(usage="%(prog)s [options]")
-    parser.add_argument('config_file', # Name of the variable where value is stored
-                        metavar='<config_file>', # Name of the argument in usage message
+    parser.add_argument('config_file',  # Name of the variable where value is stored
+                        metavar='<config_file>',  # Name of the argument in usage message
                         help='Input YAML file to generate the configuration from')
 
     parser.add_argument('template',
