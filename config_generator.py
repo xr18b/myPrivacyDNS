@@ -107,7 +107,7 @@ def main() -> None:
                         help='When writing to an output file, override it if already exists')
 
     args = parser.parse_args()
-    
+
     config = get_config(args.config_file)
 
     OUTPUT_TEXT = """;
