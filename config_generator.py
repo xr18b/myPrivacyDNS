@@ -12,7 +12,9 @@ def get_config(filename):
         try:
             return yaml.load(config_file, Loader=yaml.FullLoader)
         except yaml.YAMLError as error:
-            sys.exit("Error while reading YAML data:\n" + str(error) + "\nAborting...")
+            sys.exit("Error while reading YAML data:\n" + str(error) + "\n \
+                      Aborting...")
+
     except (IOError, ValueError, EOFError) as error:
         sys.exit(error)
 
@@ -40,13 +42,20 @@ def get_static_mapping(config):
 
         if "ipv4" in mapping:
             for address in mapping['ipv4']:
-                RETURN_TEXT += "\n" + mapping['host'].ljust(50) + " IN A     " + address
+                RETURN_TEXT += "\n" \
+                             + mapping['host'].ljust(50) \
+                             + " IN A     " \
+                             + address
         else:
-            sys.exit("No ipv4 specified for static mapping '%s'\nAborting..." % mapping['host'])
+            sys.exit("No ipv4 specified for static mapping '%s'\n \
+                      Aborting..." % mapping['host'])
 
         if "ipv6" in mapping:
             for address in mapping['ipv6']:
-                RETURN_TEXT += "\n" + mapping['host'].ljust(50) + " IN AAAA  " + address
+                RETURN_TEXT += "\n" \
+                             + mapping['host'].ljust(50) \
+                             + " IN AAAA  " \
+                             + address
 
     return RETURN_TEXT
 
@@ -58,13 +67,20 @@ def get_blocking_records(config):
 
     if "ipv4" in config['destination']:
         for address in config['destination']['ipv4']:
-            RETURN_TEXT += "\n" + BLK_DST_NAME.ljust(50) + " IN A     " + address
+            RETURN_TEXT += "\n"  \
+                         + BLK_DST_NAME.ljust(50) \
+                         + " IN A     " \
+                         + address
     else:
-        sys.exit("No ipv4 specified for blocking destination (%s)\nAborting..." % BLK_DST_NAME)
+        sys.exit("No ipv4 specified for blocking destination (%s)\n \
+                  Aborting..." % BLK_DST_NAME)
 
     if "ipv6" in config['destination']:
         for address in config['destination']['ipv6']:
-            RETURN_TEXT += "\n" + BLK_DST_NAME.ljust(50) + " IN AAAA  " + address
+            RETURN_TEXT += "\n" \
+                         + BLK_DST_NAME.ljust(50) \
+                         + " IN AAAA  " \
+                         + address
 
     if 'domain_list' in config and config['domain_list'] is not None:
         # Generating the blocking list
@@ -78,18 +94,27 @@ def get_blocking_records(config):
 
             processedRecords.append(domain['name'])
 
-            RETURN_TEXT += "\n" + domain['name'].ljust(50) + " IN CNAME " + BLK_DST_NAME
+            RETURN_TEXT += "\n" \
+                         + domain['name'].ljust(50) \
+                         + " IN CNAME " \
+                         + BLK_DST_NAME
+
             if not ("include_sub" in domain) or domain['include_sub'] is True:
-                RETURN_TEXT += "\n" + "*." + domain['name'].ljust(48) + " IN CNAME " + BLK_DST_NAME
+                RETURN_TEXT += "\n" \
+                             + "*." \
+                             + domain['name'].ljust(48) \
+                             + " IN CNAME " \
+                             + BLK_DST_NAME
 
     return RETURN_TEXT
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(usage="%(prog)s [options]")
-    parser.add_argument('config_file',  # Name of the variable where value is stored
-                        metavar='<config_file>',  # Name of the argument in usage message
-                        help='Input YAML file to generate the configuration from')
+    parser.add_argument('config_file',
+                        metavar='<config_file>',
+                        help='Input YAML file to generate the configuration \
+                              from')
 
     parser.add_argument('template',
                         metavar='<template_file>',
@@ -104,7 +129,8 @@ def main() -> None:
                         dest='override',
                         required=False,
                         action="store_true",
-                        help='When writing to an output file, override it if already exists')
+                        help='When writing to an output file, override it if \
+                              already exists')
 
     args = parser.parse_args()
 
@@ -130,7 +156,8 @@ def main() -> None:
 
     else:
         if exists(args.outfile) and not args.override:
-            print(args.outfile + ": File already exists. Use '-f' flag to override")
+            print(args.outfile +
+                  ": File already exists. Use '-f' flag to override")
             return 1
 
         try:
