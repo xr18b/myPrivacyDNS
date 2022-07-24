@@ -77,7 +77,7 @@ blocking:
         - name: googleadsserving.cn
         - name: google-analytics.com
         - name: googletraveladservices.com
-        - name: gstatic.com
+#       - name: gstatic.com
         - name: googleoptimize.com
         - name: dmtry.com
         - name: mng-ads.com
@@ -499,7 +499,7 @@ blocking:
         - name: jscoinminer.com
 ## Blocking all google domains
 ## Will break most websites, so to be removed if required
-        - name: google.com
+#       - name: google.com
         - name: google.be
         - name: google.fr
         - name: google.lu
