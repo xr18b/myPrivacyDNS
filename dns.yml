@@ -469,6 +469,10 @@ blocking:
         - name: toksell.xyz
         - name: adups.com
         - name: adsvert.com
+        - name: iwanttodeliver.com
+        - name: monitor.azure.com
+        - name: headerlift.com
+        - name: improvedigital.com
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
 ## Blocking domains used for 1st party tracking
