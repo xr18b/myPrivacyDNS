@@ -42,20 +42,14 @@ def get_static_mapping(config):
 
         if "ipv4" in mapping:
             for address in mapping['ipv4']:
-                RETURN_TEXT += "\n" \
-                             + mapping['host'].ljust(50) \
-                             + " IN A     " \
-                             + address
+                RETURN_TEXT += f"\n{mapping['host'].ljust(50)} IN A     {address}"
         else:
             sys.exit("No ipv4 specified for static mapping '%s'\n \
                       Aborting..." % mapping['host'])
 
         if "ipv6" in mapping:
             for address in mapping['ipv6']:
-                RETURN_TEXT += "\n" \
-                             + mapping['host'].ljust(50) \
-                             + " IN AAAA  " \
-                             + address
+                RETURN_TEXT += f"\n{mapping['host'].ljust(50)} IN AAAA  {address}"
 
     return RETURN_TEXT
 
@@ -67,20 +61,14 @@ def get_blocking_records(config):
 
     if "ipv4" in config['destination']:
         for address in config['destination']['ipv4']:
-            RETURN_TEXT += "\n"  \
-                         + BLK_DST_NAME.ljust(50) \
-                         + " IN A     " \
-                         + address
+            RETURN_TEXT += f"\n{BLK_DST_NAME.ljust(50)} IN A     {address}"
     else:
         sys.exit("No ipv4 specified for blocking destination (%s)\n \
                   Aborting..." % BLK_DST_NAME)
 
     if "ipv6" in config['destination']:
         for address in config['destination']['ipv6']:
-            RETURN_TEXT += "\n" \
-                         + BLK_DST_NAME.ljust(50) \
-                         + " IN AAAA  " \
-                         + address
+            RETURN_TEXT += f"\n{BLK_DST_NAME.ljust(50)} IN AAAA  {address}"
 
     if 'domain_list' in config and config['domain_list'] is not None:
         # Generating the blocking list
@@ -94,17 +82,10 @@ def get_blocking_records(config):
 
             processedRecords.append(domain['name'])
 
-            RETURN_TEXT += "\n" \
-                         + domain['name'].ljust(50) \
-                         + " IN CNAME " \
-                         + BLK_DST_NAME
+            RETURN_TEXT += f"\n{domain['name'].ljust(50)} IN CNAME {BLK_DST_NAME}"
 
             if not ("include_sub" in domain) or domain['include_sub'] is True:
-                RETURN_TEXT += "\n" \
-                             + "*." \
-                             + domain['name'].ljust(48) \
-                             + " IN CNAME " \
-                             + BLK_DST_NAME
+                RETURN_TEXT += f"\n*.{domain['name'].ljust(48)} IN CNAME {BLK_DST_NAME}"
 
     return RETURN_TEXT
 
