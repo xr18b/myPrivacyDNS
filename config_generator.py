@@ -36,6 +36,7 @@ def get_static_mapping(config):
     for mapping in config:
 
         if mapping['host'] in processedRecords:
+            print("Duplicate static mapping: " + domain['name'])
             continue
 
         processedRecords.append(mapping['host'])
@@ -78,6 +79,7 @@ def get_blocking_records(config):
 
         for domain in config['domain_list']:
             if domain['name'] in processedRecords:
+                print("Duplicate domain to block: " + domain['name'])
                 continue
 
             processedRecords.append(domain['name'])
