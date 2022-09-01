@@ -480,6 +480,8 @@ blocking:
         - name: headerlift.com
         - name: improvedigital.com
         - name: yandex.com
+        - name: pub.network
+        - name: freegeoip.net
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
 ## Blocking domains used for 1st party tracking
