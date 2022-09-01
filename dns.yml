@@ -46,6 +46,12 @@ static_mapping:
     # Static mapping for gigya domain required for some app
     - host: accounts.us1.gigya.com
       ipv4: [23.37.32.195]
+    # Allowing some Yandex services while blocking all other Yandex domains
+    - host: translate.yandex.com
+      ipv4: [213.180.204.193]
+    - host: images.yandex.com
+      ipv4: [213.180.204.242]
+      ipv6: [2a02:6b8::242]
 
 blocking:
     # 'destination' defines where to redirect blocked domains
@@ -473,6 +479,7 @@ blocking:
         - name: monitor.azure.com
         - name: headerlift.com
         - name: improvedigital.com
+        - name: yandex.com
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
 ## Blocking domains used for 1st party tracking
