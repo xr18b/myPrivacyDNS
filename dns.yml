@@ -52,6 +52,10 @@ static_mapping:
     - host: images.yandex.com
       ipv4: [213.180.204.242]
       ipv6: [2a02:6b8::242]
+    - host: www.engie.be
+      ipv4: [45.60.78.119]
+    - host: account.engie.be
+      ipv4: [45.60.78.119]
 
 blocking:
     # 'destination' defines where to redirect blocked domains
