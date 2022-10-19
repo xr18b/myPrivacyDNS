@@ -229,6 +229,7 @@ blocking:
         - name: trafficfactory.biz
         - name: adjust.com
         - name: adjust.net.in
+        - name: adjust.world
         - name: adj.st
         - name: fbsbx.com
         - name: singular.net
@@ -486,8 +487,18 @@ blocking:
         - name: yandex.com
         - name: pub.network
         - name: freegeoip.net
+        - name: aapliweb.com
+        - name: daraz.com
+        - name: clo.footprintdns.com
+        - name: xiti.com
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
+        - name: gateway.icloud.com
+        - name: ess.apple.com
+        - name: iadsdk.apple.com
+        - name: iadcontent.apple.com
+        - name: metrics.icloud.com
+        - name: smoot.apple.com
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
