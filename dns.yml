@@ -580,6 +580,18 @@ blocking:
 ## Blocking all google domains
 ## Will break most websites, so to be removed if required
 #       - name: google.com
+        - name: www-googletagmanager.l.google.com
+          include_sub: False
+        - name: pagead-googlehosted.l.google.com
+          include_sub: False
+        - name: ssl-google-analytics.l.google.com
+          include_sub: False
+        - name: fundingchoicesmessages.google.com
+          include_sub: False
+        - name: contributor.google.com
+          include_sub: False
+        - name: adservice.google.com
+          include_sub: False
         - name: google.be
         - name: google.fr
         - name: google.lu
