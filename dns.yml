@@ -505,6 +505,27 @@ blocking:
         - name: huaweihigame.com
         - name: ios.nccp.netflix.com
           include_sub: False
+        - name: telemetry.microsoft.com
+          include_sub: False
+        - name: telemetry.mozilla.org
+          include_sub: False
+        - name: adincube.com
+        - name: appdynamics.com
+        - name: criteo.net
+        - name: analytics.query.yahoo.com
+          include_sub: False
+        - name: gemini.yahoo.com
+          include_sub: False
+        - name: s.gycs.b.yahoodns.net
+          include_sub: False
+        - name: ads.yahoo.com
+          include_sub: False
+        - name: adserver.yahoo.com
+          include_sub: False
+        - name: marketingsolutions.yahoo.com
+          include_sub: False
+        - name: advil.waze.com
+          include_sub: False
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
         - name: gateway.icloud.com
@@ -513,6 +534,7 @@ blocking:
         - name: iadcontent.apple.com
         - name: metrics.icloud.com
         - name: smoot.apple.com
+        - name: cstat.apple.com
         ### Blocking CloudFront trackers
         - name: dug3fehy1j4tq.cloudfront.net
         - name: d63r8xi1zu867.cloudfront.net
