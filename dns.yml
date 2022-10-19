@@ -511,6 +511,26 @@ blocking:
         - name: iadcontent.apple.com
         - name: metrics.icloud.com
         - name: smoot.apple.com
+        ### Blocking CloudFront trackers
+        - name: dug3fehy1j4tq.cloudfront.net
+        - name: d63r8xi1zu867.cloudfront.net
+        - name: d3h5bk8iotgjvw.cloudfront.net
+        - name: d21m0ezw6fosyw.cloudfront.net
+        - name: d25xi40x97liuc.cloudfront.net
+        - name: d1l0nb3g075aoz.cloudfront.net
+        - name: dekk1bfmkupib.cloudfront.net
+        - name: d3oerj8nt59rd2.cloudfront.net
+        - name: d3mlfyygrfdi2i.cloudfront.net
+        - name: d35u1vg1q28b3w.cloudfront.net
+        - name: dq4irj27fs462.cloudfront.net
+        - name: d2o5idwacg3gyw.cloudfront.net
+        - name: d3nocrch4qti4v.cloudfront.net
+        - name: d1pux066p3zvi3.cloudfront.net
+        - name: d33wwcok8lortz.cloudfront.net
+        - name: d1225795gabrip.cloudfront.net
+        - name: d5i9o0tpq9sa1.cloudfront.net
+        - name: d3c3cq33003psk.cloudfront.net
+        - name: d3tsytm1wtjqo2.cloudfront.net
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
