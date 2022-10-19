@@ -491,6 +491,18 @@ blocking:
         - name: daraz.com
         - name: clo.footprintdns.com
         - name: xiti.com
+        - name: hmstats.com
+        - name: huaweicloud.com
+        - name: myhuaweicloud.com
+        - name: hicloud.com
+        - name: cloud.huawei.com
+        - name: dbankcdn.com
+        - name: dbankcloud.asia
+        - name: dbankcloud.cn
+        - name: dbankcloud.com
+        - name: dbankedge.net
+        - name: hinative.com
+        - name: huaweihigame.com
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
         - name: gateway.icloud.com
