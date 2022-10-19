@@ -503,6 +503,8 @@ blocking:
         - name: dbankedge.net
         - name: hinative.com
         - name: huaweihigame.com
+        - name: ios.nccp.netflix.com
+          include_sub: False
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
         - name: gateway.icloud.com
