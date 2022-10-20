@@ -526,35 +526,115 @@ blocking:
           include_sub: False
         - name: advil.waze.com
           include_sub: False
+        - name: adsassets.waze.com
+          include_sub: False
+        - name: ads-resources-legacy.waze.com
+          include_sub: False
+        - name: ads-resources.waze.com
+          include_sub: False
+        - name: row-advil.waze.com
+          include_sub: False
+        - name: venues.waze.com
+          include_sub: False
+        - name: applift.com
+        - name: adsdk.yandex.ru
+          include_sub: False
+        - name: advertising.yandex.ru
+          include_sub: False
+        - name: analytics.mobile.yandex.net
+          include_sub: False
+        - name: appmetrica.yandex.com
+          include_sub: False
+        - name: bs.yandex.ru
+          include_sub: False
+        - name: clck.yandex.ru
+          include_sub: False
+        - name: appmetrica.yandex.ru
+          include_sub: False
+        - name: appmetrica.yandex.com
+          include_sub: False
+        - name: appmetrica.yandex.net
+          include_sub: False
+        - name: cdn.branch.io
+          include_sub: False
+        - name: snap.licdn.com
+          include_sub: False
+        - name: adeventtracker.spotify.com
+          include_sub: False
+        - name: pixel.spotify.com
+          include_sub: False
+        - name: pixel-static.spotify.com
+          include_sub: False
+        - name: exp.wg.spotify.com
+          include_sub: False
+        - name: bloodhound.spotify.com
+          include_sub: False
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
+          include_sub: False
         - name: gateway.icloud.com
+          include_sub: False
         - name: ess.apple.com
+          include_sub: False
         - name: iadsdk.apple.com
+          include_sub: False
         - name: iadcontent.apple.com
+          include_sub: False
         - name: metrics.icloud.com
+          include_sub: False
         - name: smoot.apple.com
+          include_sub: False
         - name: cstat.apple.com
+          include_sub: False
+        - name: metrics.fe.apple-dns.net
+          include_sub: False
+        - name: advertising.apple.com
+          include_sub: False
+        - name: iadmoo.apple.com
+          include_sub: False
         ### Blocking CloudFront trackers
         - name: dug3fehy1j4tq.cloudfront.net
+          include_sub: False
         - name: d63r8xi1zu867.cloudfront.net
+          include_sub: False
         - name: d3h5bk8iotgjvw.cloudfront.net
+          include_sub: False
         - name: d21m0ezw6fosyw.cloudfront.net
+          include_sub: False
         - name: d25xi40x97liuc.cloudfront.net
+          include_sub: False
         - name: d1l0nb3g075aoz.cloudfront.net
+          include_sub: False
         - name: dekk1bfmkupib.cloudfront.net
+          include_sub: False
         - name: d3oerj8nt59rd2.cloudfront.net
+          include_sub: False
         - name: d3mlfyygrfdi2i.cloudfront.net
+          include_sub: False
         - name: d35u1vg1q28b3w.cloudfront.net
+          include_sub: False
         - name: dq4irj27fs462.cloudfront.net
+          include_sub: False
         - name: d2o5idwacg3gyw.cloudfront.net
+          include_sub: False
         - name: d3nocrch4qti4v.cloudfront.net
+          include_sub: False
         - name: d1pux066p3zvi3.cloudfront.net
+          include_sub: False
         - name: d33wwcok8lortz.cloudfront.net
+          include_sub: False
         - name: d1225795gabrip.cloudfront.net
+          include_sub: False
         - name: d5i9o0tpq9sa1.cloudfront.net
+          include_sub: False
         - name: d3c3cq33003psk.cloudfront.net
+          include_sub: False
         - name: d3tsytm1wtjqo2.cloudfront.net
+          include_sub: False
+        - name: d3ds63zw57jt09.cloudfront.net
+          include_sub: False
+        - name: d3dy5gmtp8yhk7.cloudfront.net
+          include_sub: False
 ## Blocking domains used for 1st party tracking
 ## (making alias from visited website's sub domains to trackers' domains)
         - name: eulerian.net
@@ -592,6 +672,12 @@ blocking:
           include_sub: False
         - name: adservice.google.com
           include_sub: False
+        - name: mail-ads.google.com
+          include_sub: False
+        - name: ampcid.google.com
+          include_sub: False
+        - name: doubleclickbygoogle.com
+        - name: alt2.googleanalytics.com
         - name: google.be
         - name: google.fr
         - name: google.lu
