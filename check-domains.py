@@ -18,7 +18,7 @@ def get_domains(filename) -> list:
         except (IOError, ValueError, EOFError) as error:
             sys.exit(error)
     else:
-        sys.exit("{filename}: File not found")
+        sys.exit(f"{filename}: File not found")
 
 
 def main() -> None:
