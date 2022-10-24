@@ -569,6 +569,17 @@ blocking:
           include_sub: False
         - name: bloodhound.spotify.com
           include_sub: False
+        - name: swrve.com
+        - name: uberads.com
+        - name: carbonads.com
+        - name: 4dsply.com
+        - name: addresseepaper.com
+        - name: tractorfoolproofstandard.com
+        - name: uuidksinc.net
+        - name: unseenreport.com
+        - name: grewquartersupporting.com
+        - name: wpadmngr.com
+        - name: exclamationresound.com
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
           include_sub: False
@@ -675,6 +686,8 @@ blocking:
         - name: mail-ads.google.com
           include_sub: False
         - name: ampcid.google.com
+          include_sub: False
+        - name: ads.youtube.com
           include_sub: False
         - name: doubleclickbygoogle.com
         - name: alt2.googleanalytics.com
