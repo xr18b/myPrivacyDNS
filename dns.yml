@@ -580,6 +580,14 @@ blocking:
         - name: grewquartersupporting.com
         - name: wpadmngr.com
         - name: exclamationresound.com
+        - name: ad6.fr
+        - name: ad-lib.io
+        - name: adaccess.fr
+        - name: adjust.io
+        - name: c00.adobe.com
+        - name: adxcel.com
+        - name: intake-analytics.wikimedia.org
+          include_sub: False
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
           include_sub: False
