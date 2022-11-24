@@ -590,27 +590,16 @@ blocking:
           include_sub: False
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
-          include_sub: False
         - name: gateway.icloud.com
-          include_sub: False
         - name: ess.apple.com
-          include_sub: False
         - name: iadsdk.apple.com
-          include_sub: False
         - name: iadcontent.apple.com
-          include_sub: False
         - name: metrics.icloud.com
-          include_sub: False
         - name: smoot.apple.com
-          include_sub: False
         - name: cstat.apple.com
-          include_sub: False
         - name: metrics.fe.apple-dns.net
-          include_sub: False
         - name: advertising.apple.com
-          include_sub: False
         - name: iadmoo.apple.com
-          include_sub: False
         - name: api-adservices.apple.com
         - name: books-analytics-events.apple.com
         - name: notes-analytics-events.apple.com
