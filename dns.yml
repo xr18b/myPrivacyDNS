@@ -603,6 +603,16 @@ blocking:
           include_sub: False
         - name: iadmoo.apple.com
           include_sub: False
+        - name: api-adservices.apple.com
+        - name: books-analytics-events.apple.com
+        - name: notes-analytics-events.apple.com
+        - name: stocks-analytics-events.apple.com
+        - name: weather-analytics-events.apple.com
+        - name: xp.apple.com
+        - name: acfeedbackws.icloud.com
+        - name: feedbackws.icloud.com
+        - name: metrics.mzstatic.com
+        - name: dzc-metrics.mzstatic.com
         ### Blocking CloudFront trackers
         - name: dug3fehy1j4tq.cloudfront.net
           include_sub: False
