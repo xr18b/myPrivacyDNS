@@ -19,26 +19,6 @@
 #       ipv6: [2a00:1450:400f:800::200e]
 
 static_mapping:
-    # Adding some static mappings for hifi.lu as they use shitty CDN for their whole website
-    - host: www.hifi.lu
-      ipv4: [80.239.137.144, 62.115.252.56]
-      ipv6: [2001:2030:21::50ef:8990, 2001:2030:21::3e73:fc38]
-    - host: media.hifi.lu
-      ipv4: [80.239.137.144, 62.115.252.56]
-      ipv6: [2001:2030:21::50ef:8990, 2001:2030:21::3e73:fc38]
-    - host: api.hifi.lu
-      ipv4: [62.115.252.56, 80.239.137.144]
-      ipv6: [2001:2030:21::3e73:fc38, 2001:2030:21::50ef:8990]
-    # Adding static mapping for 'developer.mozilla.org' as it uses CloudFront CDN
-    - host: developer.mozilla.org
-      ipv4: [65.9.49.78, 65.9.49.117, 65.9.49.23, 65.9.49.62]
-      ipv6: [2600:9000:20fc:ca00:2:eb5:8c00:93a1, 2600:9000:20fc:7600:2:eb5:8c00:93a1, 2600:9000:20fc:9c00:2:eb5:8c00:93a1, 2600:9000:20fc:4e00:2:eb5:8c00:93a1]
-    - host: m.orange.be
-      ipv4: [107.154.80.222]
-    - host: www.orange.be
-      ipv4: [107.154.80.222]
-    - host: sso.orange.be
-      ipv4: [107.154.80.222]
     # Static mapping for gigya domain required for some app
     - host: accounts.us1.gigya.com
       ipv4: [23.37.32.195]
@@ -48,10 +28,6 @@ static_mapping:
     - host: images.yandex.com
       ipv4: [213.180.204.242]
       ipv6: [2a02:6b8::242]
-    - host: www.engie.be
-      ipv4: [45.60.78.119]
-    - host: account.engie.be
-      ipv4: [45.60.78.119]
 
 blocking:
     # 'destination' defines where to redirect blocked domains
@@ -340,7 +316,6 @@ blocking:
         - name: trafficg.com
         - name: popcash.net
         - name: adblade.com
-        - name: incapdns.net
         - name: adgear.com
         - name: addtoany.com
         - name: choupsee.com
