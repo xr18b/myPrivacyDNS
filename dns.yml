@@ -244,6 +244,7 @@ blocking:
         - name: revampcdn.com
         - name: notix.io
         - name: datadoghq-browser-agent.com
+        - name: datadoghq.com
         - name: aaxads.com
         - name: onesignal.com
         - name: aaxdetect.com
@@ -559,6 +560,18 @@ blocking:
         - name: adxcel.com
         - name: intake-analytics.wikimedia.org
           include_sub: False
+        - name: permutive.app
+        - name: btloader.com
+        - name: actonsoftware.com
+        - name: actonservice.com
+        - name: pardot.com
+        - name: jwpltx.com
+        - name: zemanta.com
+        - name: adbutter.net
+        - name: tealiumiq.com
+        - name: cookieless-data.com
+        - name: stats.wp.com
+        - name: opti-digital.com
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
         - name: gateway.icloud.com
@@ -646,6 +659,10 @@ blocking:
         - name: cdn.trustcommander.net
 ## Blocking CryptoMiners
         - name: jscoinminer.com
+        - name: cryptopool.eu
+        - name: dashminer.com
+        - name: bytecoins.world
+        - name: suremine.com
 ## Blocking all google domains
 ## Will break most websites, so to be removed if required
 #       - name: google.com
