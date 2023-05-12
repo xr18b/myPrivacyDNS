@@ -572,6 +572,8 @@ blocking:
         - name: cookieless-data.com
         - name: stats.wp.com
         - name: opti-digital.com
+        - name: usabilla.com
+        - name: comscoreresearch.com
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
         - name: gateway.icloud.com
@@ -594,6 +596,15 @@ blocking:
         - name: feedbackws.icloud.com
         - name: metrics.mzstatic.com
         - name: dzc-metrics.mzstatic.com
+        - name: pbstck.com
+        - name: banners.itunes.apple.com
+        - name: iad.apple.com
+        - name: iadctest.qwapi.com
+        - name: iadworkbench.apple.com
+        - name: launch.apple.com
+        - name: metrics.apple.com
+        - name: qwapi.apple.com
+        - name: securemetrics.apple.com
         ### Blocking CloudFront trackers
         - name: dug3fehy1j4tq.cloudfront.net
           include_sub: False
