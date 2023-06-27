@@ -1,0 +1,19 @@
+# This file should include all domains to block for the 'Google' cathegory
+        - name: chrome.com
+        - name: google.ad
+        - name: google.ie
+        - name: googleapis.com
+        - name: googleapis.cn
+        - name: googleapis.co
+        - name: googleusercontent.com
+        - name: googletagservices.com
+        - name: googletagmanager.com
+        - name: googlesyndication.com
+        - name: googleadservices.com
+        - name: googleads.com
+        - name: googleadsserving.cn
+        - name: google-analytics.com
+        - name: googletraveladservices.com
+#       - name: gstatic.com
+        - name: googleoptimize.com
+

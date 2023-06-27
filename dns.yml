@@ -12,7 +12,7 @@
 #               include_sub: False
 #             - name: domain.to.block
 #               include_sub: True (not required as default to True)
-
+#               include_sub: True (not required as default to True)
 # static_mapping:
 #     - host: youtube.com
 #       ipv4: [142.250.74.14]
@@ -37,15 +37,9 @@ blocking:
         name: localhost
         ipv4: ['127.0.0.1']
         ipv6: ['::1']
-    domain_list:
-        - name: advertising-cdn.dpgmedia.cloud
-          include_sub: False
-        - name: facebook.net
-        - name: facebook.com
-        - name: fbcdn.net
-        - name: tfbnw.net
-        - name: getpaloma.com # Facebook's automated personnal shopping conversation 
-        - name: tiktok.com
+
+    google_list: &google_domains
+        - name: chrome.com
         - name: google.ad
         - name: google.ie
         - name: googleapis.com
@@ -62,6 +56,18 @@ blocking:
         - name: googletraveladservices.com
 #       - name: gstatic.com
         - name: googleoptimize.com
+
+
+    domain_list:
+        <<: [*google_domains]
+        - name: advertising-cdn.dpgmedia.cloud
+          include_sub: False
+        - name: facebook.net
+        - name: facebook.com
+        - name: fbcdn.net
+        - name: tfbnw.net
+        - name: getpaloma.com # Facebook's automated personnal shopping conversation 
+        - name: tiktok.com
         - name: dmtry.com
         - name: mng-ads.com
         - name: platform.twitter.com
