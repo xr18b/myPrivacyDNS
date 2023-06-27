@@ -524,8 +524,6 @@ blocking:
           include_sub: False
         - name: appmetrica.yandex.ru
           include_sub: False
-        - name: appmetrica.yandex.com
-          include_sub: False
         - name: appmetrica.yandex.net
           include_sub: False
         - name: cdn.branch.io
