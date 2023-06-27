@@ -45,6 +45,7 @@ blocking:
         - name: fbcdn.net
         - name: tfbnw.net
         - name: getpaloma.com # Facebook's automated personnal shopping conversation 
+        - name: tiktok.com
         - name: google.ad
         - name: google.ie
         - name: googleapis.com
@@ -574,6 +575,7 @@ blocking:
         - name: opti-digital.com
         - name: usabilla.com
         - name: comscoreresearch.com
+        - name: adnuntius.com
         ### Blocking stuff used by the iPhone
         - name: stats.gc.apple.com
         - name: gateway.icloud.com
