@@ -3,14 +3,44 @@
 import sys
 import yaml
 import argparse
-from os.path import exists
+import os
+from typing import Any, IO
+
+# Implement a way of "including" Yaml subfiles to split configuration in multiple files
+class Loader(yaml.SafeLoader):
+    """YAML Loader with `!include` constructor."""
+
+    def __init__(self, stream: IO) -> None:
+        """Initialise Loader."""
+
+        try:
+            self._root = os.path.split(stream.name)[0]
+        except AttributeError:
+            self._root = os.path.curdir
+
+        super().__init__(stream)
+
+def construct_include(loader: Loader, node: yaml.Node) -> Any:
+    """Include file referenced at node."""
+
+    filename = os.path.abspath(os.path.join(loader._root, loader.construct_scalar(node)))
+    extension = os.path.splitext(filename)[1].lstrip('.')
+
+    with open(filename, 'r') as f:
+        if extension in ('yaml', 'yml'):
+            return yaml.load(f, Loader)
+        else:
+            return ''.join(f.readlines())
+
+yaml.add_constructor('!include', construct_include, Loader)
+
 
 
 def get_config(filename):
     try:
         config_file = open(filename, 'r')
         try:
-            return yaml.load(config_file, Loader=yaml.FullLoader)
+            return yaml.load(config_file, Loader)
         except yaml.YAMLError as error:
             sys.exit("Error while reading YAML data:\n" + str(error) + "\n \
                       Aborting...")
@@ -138,7 +168,7 @@ def main() -> None:
         print(OUTPUT_TEXT)
 
     else:
-        if exists(args.outfile) and not args.override:
+        if os.path.exists(args.outfile) and not args.override:
             print(args.outfile +
                   ": File already exists. Use '-f' flag to override")
             return 1
